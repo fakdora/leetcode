@@ -5,7 +5,7 @@ class Stack():
     def peek(self):
         return self.stack[len(self.stack)-1]
 
-    def pop(self):
+    ( def) pop(self):
         try:
             return self.stack.pop()
         except IndexError:
