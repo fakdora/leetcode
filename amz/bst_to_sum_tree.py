@@ -1,4 +1,7 @@
-#Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.
+#Given a Binary Search Tree (BST), convert it to a
+# Greater Sum Tree such that every key of the original
+# BST is changed to the original value plus sum of all
+# values greater than the original key in BST.
 # https://leetcode.com/problems/convert-bst-to-greater-tree/description/
 
 
@@ -9,6 +12,10 @@ pre order
     root, left, right
 post order
     left, right, root
+
+
+# BST is changed to the original value plus sum of all
+# values greater than the original key in BST.
 
 rever inorder
     right root left?
