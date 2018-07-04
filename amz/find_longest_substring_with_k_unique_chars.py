@@ -1,32 +1,21 @@
+# find_longest_substring_with_k_unique_chars
 # aabbdcdeabacd
+# pre: k discinct chars, st string 
 
-# pre:
-# k discinct chars
-# st string
+# hash map of chars with counters, start - starting
 
-# vars
-# hash map of chars with counters
-# start - starting
-# y - current index
-# curr_subst
-
-# spcial cases:
-# empty, type, None, 
-# allowed chars - lower, upper, punctuation, 
+# spcial cases: empty, type, None, 
+# allowed chars: lower, upper, punctuation, 
 # ascii code - 256
 
-
-def kuni(st, k):
+def longest_k_unique_chars_substring(st, k):
     chs = {}
     longest_st = ""
-    start = 0
-    unique_counter = 0
+    start = unique_counter = 0
     
     for i, ch in enumerate(st):
-        # find out if the character is unique
-        # then add it to the unique counter
-        # else just put it in to the hash map
-        
+        # find out if the character is unique, then add it to the 
+        # unique counter else just put it in to the hash map
         if ch not in chs.keys():
             chs[ch] = 0
             unique_counter += 1
