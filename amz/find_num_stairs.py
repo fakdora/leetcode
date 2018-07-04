@@ -24,14 +24,7 @@ class Solution(object):
         memo[n] =  self.climbStairs_recur_memo(n-1, memo) + self.climbStairs_recur_memo(n-2, memo)
         return  memo[n]
 
-    def climbStairs_dp(self, n):
-        pass
-
-    def climbStairs_fib(self, n):
-        pass
-
 def num_ways_dp(n):
-    
     nums = [0] * (n+1)
     nums[0] = 1
     nums[1] = 1

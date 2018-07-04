@@ -4,12 +4,6 @@ class Solution(object):
         """
         :type matrix: List[List[int]]
         :rtype: List[int]
-        [       col0,         col1,   col2,    col3
-         row 0: [1,(0,0)     2,(0,1)      3,(0,2)      4(0,3)],
-         row 1: [5,(1,0)     6,(1,1)      7,(1,2)      8(1,3)],
-         row 2: [9,(2,0)     10,(2,1)     11,(2,2)     12(2,3)]
-        ]
-
         [          col0     col1    col2    col3
           row 0    [1,      2,      3,      4],
           row 1    [5,      6,      7,      8],
@@ -19,8 +13,7 @@ class Solution(object):
         if not matrix:
             return []
 
-        min_row = 0
-        min_col = 0
+        min_row = min_col = 0
         max_row = len(matrix) - 1
         max_col = len(matrix[0]) - 1
         result = []
