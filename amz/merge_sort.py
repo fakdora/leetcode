@@ -4,7 +4,6 @@
 # First subarray is arr[low..mid]
 # Second subarray is arr[mid+1..high]
 def merge(arr, low, mid, high):
-
     left_arr = arr[low:mid+1]
     right_arr = arr[mid+1:high+1]
     first_half_length = len(left_arr)
@@ -23,7 +22,6 @@ def merge(arr, low, mid, high):
             arr[current] = right_arr[j]
             j += 1
         current += 1
-
 
     # Copy the remaining elements of left_arr[], if there are any
     while i < first_half_length:
