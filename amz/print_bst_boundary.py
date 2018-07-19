@@ -55,13 +55,14 @@ print_level(root)
 
 def printLeaves(root):
     if(root):
-        printLeaves(root.left)
-
-        # Print it if it is a leaf node
         if root.left is None and root.right is None:
             print root.val,
-
+        printLeaves(root.left)
         printLeaves(root.right)
+        # Print it if it is a leaf node
+
+
+
 
 # A function to print all left boundary nodes, except a
 # leaf node. Print the nodes in TOP DOWN manner
@@ -79,7 +80,7 @@ def printBoundaryLeft(root):
         elif(root.right):
             print root.val,
             # if root.val == 42: print 'found'
-            printBoundaryRight(root.right)
+            printBoundaryLeft(root.right)
 
         # do nothing if it is a leaf node, this way we
         # avoid duplicates in output
